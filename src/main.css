@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .pixel {
+    font-size: 25px;
+    color: white;
+    height: auto;
+    margin: 10px;
+    font-family: 'VT323';
+
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+
+    cursor: pointer;
+  }
+
+  .pixel:active {
+    top: 2px;
+  }
+
+  .pixel {
+    line-height: 0;
+
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+
+    border-style: solid;
+    border-width: 20px;
+    -moz-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+    -webkit-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+    -o-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+    border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+  }
+
+  .pixel span {
+    @apply relative inline-block w-auto font-mono text-sm font-bold;
+    vertical-align: top;
+
+    margin: -20px -20px;
+    line-height: 20px;
+    padding: 15px 30px;
+
+    background: #fff;
+    background: linear-gradient(135deg, transparent 10px, #fff 0) top left,
+      linear-gradient(225deg, transparent 10px, #fff 0) top right,
+      linear-gradient(315deg, transparent 10px, #fff 0) bottom right,
+      linear-gradient(45deg, transparent 10px, #fff 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(
+        circle at 0 0,
+        rgba(204, 0, 0, 0) 14px,
+        #fff 15px
+      ),
+      radial-gradient(circle at 100% 0, rgba(204, 0, 0, 0) 14px, #fff 15px),
+      radial-gradient(circle at 100% 100%, rgba(204, 0, 0, 0) 14px, #fff 15px),
+      radial-gradient(circle at 0 100%, rgba(204, 0, 0, 0) 14px, #fff 15px);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  .custom-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  @font-face {
+    font-family: 'squid';
+    src: url('/fonts/squids.otf');
+  }
+}
+.textXLarge {
+  @apply text-5xl  xl:text-6xl 2xl:text-7xl;
+}
+
+.textLarge {
+  @apply text-4xl 2xl:text-5xl;
+}
+
+.textMedium {
+  @apply text-xl sm:text-2xl 2xl:text-3xl;
+}
+
+.textSmall {
+  @apply text-base font-light;
+}
+
+@responsive {
+  .pin-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .pin-x-center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pin-y-center {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.linear-wipe {
+  background: linear-gradient(
+    to right,
+    #fff 20%,
+    #7bfafc 40%,
+    #7bfafc 60%,
+    #fff 80%
+  );
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 6s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+.hamburger-icon span {
+  @apply absolute right-0 block w-full border-t-4 border-solid border-current;
+
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-icon.open span,
+.hamburger-icon:hover span {
+  @apply w-full;
+}
+
+.hamburger-icon span:nth-child(1),
+.hamburger-icon span:nth-child(2),
+.hamburger-icon span:nth-child(3) {
+  top: 9px;
+}
+
+.hamburger-icon > span:nth-child(1) {
+  @apply top-0;
+}
+
+.hamburger-icon > span:nth-child(3) {
+  top: 18px;
+}
+
+.service-summary li {
+  @apply text-2xl font-bold;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+  top: 10px;
+  transform: rotate(135deg);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-135deg);
+}
+
+.slider-container {
+  animation: slides 80s infinite linear;
+}
+
+.slider-container-delay {
+  animation: slides2 300s infinite linear;
+
+  transform: translateX(-210vw);
+}
+
+@keyframes slides {
+  0% {
+    transform: translateX(0px);
+  }
+
+  70% {
+    transform: translateX(70vw);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes slides2 {
+  0% {
+    transform: -translateX(100vw);
+  }
+
+  70% {
+    transform: translateX(70vw);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+/* Fill button styling */
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  @apply border-a-pink font-mono text-gray-800;
+}
+
+.fill::after {
+  content: '';
+  @apply bg-a-pink;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+/* End of Fill Button  */

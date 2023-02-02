@@ -65,26 +65,19 @@
             X
           </button>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-            itaque quasi dolor corporis deleniti nam, et minus doloremque
-            quaerat impedit facilis recusandae, aliquid sunt provident.
-            Dignissimos in odio iusto quo?
+            Under Mt. Hakiro lies the sleeping malicious god, Akujin. During the
+            celebration of a new technology which would allow the freedom of
+            all, Akujin was awoken from his century long slumber which has
+            resulted in the destruction of the town which laid to the East of
+            the sacred mountain. In the wake of this destruction the sacred
+            Hakiro dragons which have been living in tranquility have now chosen
+            to leave their haven and aid the citizens and defend the towns
+            people with their own secret weapon...
           </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-            itaque quasi dolor corporis deleniti nam, et minus doloremque
-            quaerat impedit facilis recusandae, aliquid sunt provident.
-            Dignissimos in odio iusto quo? Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Facere itaque quasi dolor corporis
-            deleniti nam, et minus doloremque quaerat impedit facilis
-            recusandae, aliquid sunt provident. Dignissimos in odio iusto quo?
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-            itaque quasi dolor corporis deleniti nam, et minus doloremque
-            quaerat impedit facilis recusandae, aliquid sunt provident.
-            Dignissimos in odio iusto quo?
-          </p>
+          <strong>
+            Will is stand a match against Akujin?<br />
+            Will you stand up and fight the righteous battle?
+          </strong>
         </div>
       </div>
     </transition>
@@ -97,7 +90,7 @@
         <div class="absolute inset-0 h-full w-full">
           <img src="/clouds.png" alt="" class="h-full w-full object-cover" />
         </div>
-        <div class="relative z-20 grid grid-cols-3">
+        <div class="relative z-20 grid grid-cols-4">
           <button
             class="absolute -top-10 right-1 z-50 text-4xl"
             @click="showGallery = false"
@@ -108,6 +101,8 @@
           <img src="/2.png" alt="" />
           <img src="/3.png" alt="" />
           <img src="/1.png" alt="" />
+          <img src="/2.png" alt="" />
+          <img src="/3.png" alt="" />
           <img src="/2.png" alt="" />
           <img src="/3.png" alt="" />
         </div>

@@ -7,12 +7,12 @@
       :infinite-scroll="true"
       :settings="hooperSettings"
     >
-      <slide class="h-32 w-32"> <img src="/1.png" class="w-32" alt="" /> </slide
-      ><slide class="h-32 w-32">
-        <img src="/2.png" class="w-32" alt="" />
+      <slide class="h- w-"> <img src="/1.png" class="w-" alt="" /> </slide
+      ><slide class="h- w-">
+        <img src="/2.png" class="w-" alt="" />
       </slide>
-      <slide class="h-32 w-32">
-        <img src="/3.png" class="w-32" alt="" />
+      <slide class="h- w-">
+        <img src="/3.png" class="w-" alt="" />
       </slide>
     </hooper>
 
@@ -65,7 +65,7 @@ export default {
             itemsToShow: 2,
           },
           1000: {
-            itemsToShow: 2,
+            itemsToShow: 3,
             pagination: 'fraction',
           },
         },

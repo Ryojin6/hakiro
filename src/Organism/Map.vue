@@ -100,11 +100,11 @@
           <img src="/1.png" alt="" />
           <img src="/2.png" alt="" />
           <img src="/3.png" alt="" />
-          <img src="/1.png" alt="" />
-          <img src="/2.png" alt="" />
-          <img src="/3.png" alt="" />
-          <img src="/2.png" alt="" />
-          <img src="/3.png" alt="" />
+          <img src="/4.png" alt="" />
+          <img src="/5.png" alt="" />
+          <img src="/6.png" alt="" />
+          <img src="/7.png" alt="" />
+          <img src="/8.png" alt="" />
         </div>
       </div>
     </transition>

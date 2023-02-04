@@ -90,7 +90,9 @@
         <div class="absolute inset-0 h-full w-full">
           <img src="/clouds.png" alt="" class="h-full w-full object-cover" />
         </div>
-        <div class="relative z-20 grid grid-cols-4">
+        <div
+          class="relative z-20 mx-auto grid max-w-4xl grid-cols-4 2xl:max-w-5xl"
+        >
           <button
             class="absolute -top-10 right-1 z-50 text-4xl"
             @click="showGallery = false"
